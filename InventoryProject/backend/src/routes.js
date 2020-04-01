@@ -1,13 +1,10 @@
-const express = require('express');
-const SessionController = require('./controller/SessionController');
-const InventoryController = require('./controller/InventoryController');
+import UserController from '../app/controller/UserController';
+import express from 'express';
 
 
 const routes = express.Router();
 
-routes.post('/register', SessionController.createUser);
-routes.post('/login', SessionController.login);
-routes.post('/inventory', InventoryController.create);
-routes.get('/inventory', InventoryController.index);
+routes.post('/register', UserController.store);
+
 
 module.exports = routes;
