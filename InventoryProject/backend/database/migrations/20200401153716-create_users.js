@@ -20,18 +20,26 @@ module.exports = {
         llowNull: false,
         type: DataTypes.STRING,
       },
+      
       email: {
         allowNull: false,
         type: DataTypes.STRING,
-        unique: true
+      },
+      createdAt: {
+        type: DataTypes.DATE,
+        allowNull: false,
+      },
+      updatedAt: {
+        type: DataTypes.DATE,
+        allowNull: false,
       },
       area: {
         allowNull: false,
         type: DataTypes.STRING,
       },
       ativo: {
-        allowNull: false,
         type: DataTypes.BOOLEAN,
+        defaultValue: 1
       }
     });
   },

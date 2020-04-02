@@ -15,7 +15,8 @@ module.exports = {
       },
       ativo: {
         allowNull: false,
-        type: DataTypes.BOOLEAN
+        type: DataTypes.BOOLEAN,
+        defaultValue: 1
       },
       user_id: {
         allowNull: false,
