@@ -1,7 +1,7 @@
 module.exports = {
+  dialect: 'mysql',
+  host: 'localhost',
   username: 'root',
   password: '',
   database: 'inventory',
-  host: '127.0.0.1',
-  dialect: 'mysql',
-}
+};
